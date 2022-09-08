@@ -1,4 +1,8 @@
 .main {
   font-size: 38px;
   font-weight: 500;
+
+  @media (min-width: 2560px) {
+    font-size: 46px;
+  }
 }

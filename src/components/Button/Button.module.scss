@@ -6,6 +6,9 @@
   cursor: pointer;
   font-weight: bold;
   padding: 10px 25px;
+  @media (min-width: 2560px) {
+    font-size: 1.2rem;
+  }
 }
 
 .button {
