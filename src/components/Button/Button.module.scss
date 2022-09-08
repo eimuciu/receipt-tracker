@@ -1,0 +1,22 @@
+@mixin btn {
+  background-image: linear-gradient(to right, #ef0082, #f50094);
+  border: none;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 25px;
+}
+
+.button {
+  @include btn;
+}
+
+.smaller {
+  @include btn;
+  background-image: none;
+  background-color: transparent;
+  color: #ef0082;
+  border: 1px solid #ef0082;
+  padding: 5px 12.5px;
+}

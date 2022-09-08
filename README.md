@@ -1,34 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Front-End Developer Test Assignment
 
-## Getting Started
+The task is to build a minimal receipt tracking application.
 
-First, run the development server:
+Design is included in the following link: https://traveltime.invisionapp.com/, user: testassignment@traveltime.com, password: testassignment. You can use the Inspect Mode to analyse the layout and CSS and use Play Mode to view the functionality.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Try to make your application as close to the provided design as possible. Your application should be responsive and scale for bigger screens, use your best judgement to decide how that should look like. You may use any languages, frameworks or css processors you like to complete this task.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Main window behaviour and requirements:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- "Add receipt" button at the bottom adds a new receipt component to the main window, check receipt component's behaviour and requirements;
+- "Total" must update in real time.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Receipt component's behaviour and requirements:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- Must have a select input to select the receipt category. Categories can be a static list in application code;
+- Must support any number of expense rows. Each row contains two text input elements - note and price;
+- "Add expense" button adds a new expense row;
+- "Total" must update in real time.
 
-## Learn More
+If you have any questions, feel free to ask.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Good luck!

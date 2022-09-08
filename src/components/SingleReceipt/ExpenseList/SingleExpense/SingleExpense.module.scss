@@ -1,0 +1,28 @@
+.main {
+  display: flex;
+  border: 1px solid white;
+  padding: 10px;
+  justify-content: center;
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  label {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  input {
+    padding: 2px 5px;
+  }
+}
+
+.firstFlexChild {
+  width: 80%;
+  margin: 0 2px;
+}
+
+.secondFlexChild {
+  width: 20%;
+  margin: 0 2px;
+}

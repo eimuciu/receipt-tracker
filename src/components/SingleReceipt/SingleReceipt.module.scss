@@ -1,0 +1,42 @@
+.main {
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.controlsBox {
+  display: flex;
+  gap: 10px;
+}
+
+.expenseBox {
+  margin-top: 25px;
+}
+
+@media (max-width: 560px) {
+  .header {
+    flex-wrap: wrap;
+  }
+
+  .totalBox {
+    order: 2;
+  }
+
+  .controlsBox {
+    order: 1;
+  }
+}
+
+@media (max-width: 376px) {
+  .controlsBox {
+    flex-wrap: wrap;
+  }
+}
