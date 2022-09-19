@@ -22,7 +22,6 @@ const SingleExpense = ({
   return (
     <div className={css.main}>
       <div className={`${css.inputBox} ${css.firstFlexChild}`}>
-        <label>Note</label>
         <input
           onChange={handleInputChange}
           value={inputValues.note}
@@ -31,10 +30,9 @@ const SingleExpense = ({
         />
       </div>
       <div className={`${css.inputBox} ${css.secondFlexChild}`}>
-        <label>Price</label>
         <input
           onChange={handleInputChange}
-          value={Number(inputValues.price)}
+          value={Number(inputValues.price) || ''}
           type="number"
           name="price"
         />

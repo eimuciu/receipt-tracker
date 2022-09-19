@@ -1,4 +1,8 @@
 .main {
+  color: #250b38;
+  span {
+    font-weight: bold;
+  }
   @media (min-width: 2560px) {
     font-size: 1.5rem;
   }

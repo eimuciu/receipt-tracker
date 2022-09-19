@@ -19,23 +19,24 @@ const SingleReceipt = ({
   return (
     <div className={css.main}>
       <div className={css.header}>
-        <div className={css.totalBox}>
-          Receipt total: €{calcExpenseTotal(receipt.expense).toFixed(2)}
-        </div>
-        <div className={css.controlsBox}>
-          <CategoriesList />
-          <Button onClick={() => handleAddExpense(receipt.id)} smaller>
-            Add expense
-          </Button>
-        </div>
+        <CategoriesList />
+        <Button onClick={() => handleAddExpense(receipt.id)} secondary>
+          Add expense
+        </Button>
       </div>
-      <div className={css.expenseBox}>
-        <ExpenseList
-          expenses={receipt.expense}
-          handleUpdateExpense={(expObj: Expense) =>
-            handleUpdateExpense(receipt.id, expObj)
-          }
-        />
+      <div className={css.dataBox}>
+        <div className={css.expenseBox}>
+          <ExpenseList
+            expenses={receipt.expense}
+            handleUpdateExpense={(expObj: Expense) =>
+              handleUpdateExpense(receipt.id, expObj)
+            }
+          />
+        </div>
+        <div className={css.totalBox}>
+          <p>Total</p>
+          <span>€{calcExpenseTotal(receipt.expense).toFixed(2)}</span>
+        </div>
       </div>
     </div>
   );

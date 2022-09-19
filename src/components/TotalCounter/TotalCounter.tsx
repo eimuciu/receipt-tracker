@@ -6,7 +6,9 @@ interface Props {
 
 const TotalCounter = ({ totalSpendings }: Props): JSX.Element => {
   return (
-    <div className={css.main}>Total spent: €{totalSpendings.toFixed(2)}</div>
+    <div className={css.main}>
+      Total <span>€{totalSpendings.toFixed(2)}</span>
+    </div>
   );
 };
 

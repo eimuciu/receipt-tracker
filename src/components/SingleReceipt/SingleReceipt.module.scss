@@ -1,7 +1,4 @@
 .main {
-  border: 1px solid black;
-  border-radius: 3px;
-  padding: 10px;
   margin-bottom: 50px;
   display: flex;
   flex-direction: column;
@@ -11,8 +8,11 @@
 }
 
 .header {
+  padding: 10px;
+  border-radius: 5px;
   display: flex;
   justify-content: space-between;
+  background-color: #250b38;
 }
 
 .controlsBox {
@@ -20,21 +20,28 @@
   gap: 10px;
 }
 
+.dataBox {
+  background-color: #f4eef7;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.totalBox {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  span {
+    font-weight: bold;
+  }
+}
+
 .expenseBox {
-  margin-top: 25px;
+  margin-top: 5px;
 }
 
 @media (max-width: 560px) {
   .header {
     flex-wrap: wrap;
-  }
-
-  .totalBox {
-    order: 2;
-  }
-
-  .controlsBox {
-    order: 1;
   }
 }
 

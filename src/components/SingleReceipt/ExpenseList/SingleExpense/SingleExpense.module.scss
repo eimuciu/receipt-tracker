@@ -1,8 +1,9 @@
 .main {
   display: flex;
-  border: 1px solid white;
-  padding: 10px;
+  border-bottom: 1px solid #e8dfed;
+  padding: 10px 0px;
   justify-content: center;
+  gap: 10px;
 }
 
 .inputBox {
@@ -14,7 +15,10 @@
     margin-bottom: 5px;
   }
   input {
-    padding: 2px 5px;
+    padding: 5px;
+    outline: none;
+    border: 1px solid #eae8ec;
+    border-radius: 3px;
   }
   @media (min-width: 2560px) {
     label,
@@ -26,7 +30,6 @@
 
 .firstFlexChild {
   width: 80%;
-  margin: 0 2px;
 }
 
 .secondFlexChild {

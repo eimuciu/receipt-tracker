@@ -3,11 +3,9 @@ import type { NextPage } from 'next';
 import type { Receipt, Expense } from '../src/types/types';
 import Head from 'next/head';
 import css from '../styles/Home.module.scss';
-import Header from '../src/components/Header/Header';
-import TotalCounter from '../src/components/TotalCounter/TotalCounter';
+import ReceiptController from '../src/components/ReceiptController/ReceiptController';
 import ReceiptsList from '../src/components/ReceiptsList/ReceiptsList';
 import { nanoid } from 'nanoid';
-import { calcTotalSpent } from '../src/utils/calcTotalSpent';
 
 const expense: Expense[] = [
   { id: '1', note: 'Bough something', price: 2.22 },
@@ -69,18 +67,20 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.png" />
       </Head>
       <nav></nav>
-      <header>
-        <Header handleAddReceipt={handleAddReceipt} />
-      </header>
+      <header></header>
       <main>
-        <TotalCounter totalSpendings={calcTotalSpent(receipts)} />
         <ReceiptsList
           receipts={receipts}
           handleAddExpense={handleAddExpense}
           handleUpdateExpense={handleUpdateExpense}
         />
       </main>
-      <footer></footer>
+      <footer>
+        <ReceiptController
+          handleAddReceipt={handleAddReceipt}
+          receipts={receipts}
+        />
+      </footer>
     </div>
   );
 };

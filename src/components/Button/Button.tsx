@@ -3,12 +3,15 @@ import css from './Button.module.scss';
 interface Props {
   children: string;
   onClick?: () => void;
-  smaller?: boolean;
+  secondary?: boolean;
 }
 
-const Button = ({ children, onClick, smaller }: Props): JSX.Element => {
+const Button = ({ children, onClick, secondary }: Props): JSX.Element => {
   return (
-    <button className={smaller ? css.smaller : css.button} onClick={onClick}>
+    <button
+      className={secondary ? css.secondary : css.button}
+      onClick={onClick}
+    >
       {children}
     </button>
   );

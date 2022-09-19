@@ -1,10 +1,9 @@
 @mixin btn {
-  background-image: linear-gradient(to right, #ef0082, #f50094);
+  background-color: #f0a023;
   border: none;
-  border-radius: 3px;
+  border-radius: 20px;
   color: white;
   cursor: pointer;
-  font-weight: bold;
   padding: 10px 25px;
   @media (min-width: 2560px) {
     font-size: 1.2rem;
@@ -15,11 +14,10 @@
   @include btn;
 }
 
-.smaller {
+.secondary {
   @include btn;
-  background-image: none;
-  background-color: transparent;
-  color: #ef0082;
-  border: 1px solid #ef0082;
-  padding: 5px 12.5px;
+  background-color: #250b38;
+  color: white;
+  border: 2px solid #f0a023;
+  padding: 5px 15px;
 }
